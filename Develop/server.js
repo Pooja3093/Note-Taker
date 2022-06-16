@@ -32,8 +32,8 @@ app.get('/notes', (req, res) =>
 
 // Get all notes
 app.get('/api/notes', (req, res) =>{
-    console.info(`GET /api/notes`);
-    res.status(200).json(notes);
+    console.info(`Fetch notes`);
+    res.sendFile(path.join(__dirname, '/db/db.json'))
   });
 
 
@@ -65,10 +65,10 @@ app.post('/api/notes', (req, res) => {
     console.log(response);
 
     // For a successful request a response with status 201 alondwith a json object "response"
-    res.status(201).json(`New note saved successfully`);
+    res.status(201).json(response);
     } else {
         // If the request is not successful, this else element will be trigerred
-        res.status(500).json('Error in saving note');
+        res.status(500).send('Error in saving note');
     }
 });
 
@@ -85,11 +85,12 @@ app.delete(`/api/notes/:id`, (req, res) => {
 
   // Remove a note by splicing the original array
   const deleteNote = notes.splice(arrIndex, 1);
-  console.log(deleteNote);
 
   // Write to file the new array
   writeToFile('./db/db.json', notes);
-  return res.send();
+  
+  // For a successful request a response with status 201 alondwith a json object "response"
+  res.status(201).json(`Note deleted successfully`);
   });
 
 app.listen(PORT, () =>
