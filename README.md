@@ -49,6 +49,6 @@ This will start the application. Watch the walk through video for reference on h
 
 
 ## Screenshot
-![screenshot_index](.\Develop\public\assets\images\index.png)
+![screenshot](.\Develop\public\assets\images\index.png)
 
-![screenshot_notes](.\Develop\public\assets\images\notes.png)
+![screenshot](.\Develop\public\assets\images\notes.png)
