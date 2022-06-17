@@ -49,6 +49,6 @@ This will start the application. Watch the walk through video for reference on h
 
 
 ## Screenshot
-![screenshot_index](\Develop\public\assets\images\index.png)
+![screenshot_index](https://github.com/Pooja3093/miniature-spork.git\Develop\public\assets\images\index.png)
 
-![screenshot_notes](\Develop\public\assets\images\notes.png)
+![screenshot_notes](https://github.com/Pooja3093/miniature-spork.git\Develop\public\assets\images\notes.png)
