@@ -1,34 +1,39 @@
-// Import express
+// Import express and other required files
 const express = require('express');
 const path = require('path');
 const { readAndAppend, readFromFile, writeToFile } = require('./helpers/fsUtils');
-
-// Import notes that are saved in db.json
 const notes = require('./db/db.json');
-
-// Helper method for generating unique ids
 const uuid = require('./helpers/uuid');
 
+
+// Define port
 const PORT = process.env.PORT || 3001;
+
 
 // Initialize app variable
 const app = express();
+
 
 // Middleware for parsing application/json and url encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+// Make static files available for use
 app.use(express.static('public'));
+
 
 // GET Route for homepage
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
-// GET Route for feedback page
+
+// GET Route for notes page
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
+
 
 // Get all notes
 app.get('/api/notes', (req, res) =>{
@@ -39,22 +44,18 @@ app.get('/api/notes', (req, res) =>{
 
 //   Save a new note
 app.post('/api/notes', (req, res) => {
-    // Log that a POST request was received
     console.info(`${req.method} request received to add a new note`);
     
-    // Destructuring the body object
     const { title, text } = req.body;
 
-    // To confirm that its a valid request
     if (title && text) {
-    // Variable for the object we will save
     const newNote = {
         title,
         text,
         id: uuid(),
     };
    
-    // Read and append to file
+    // save note to json file
     readAndAppend(newNote, './db/db.json');
 
     const response = {
@@ -64,10 +65,8 @@ app.post('/api/notes', (req, res) => {
 
     console.log(response);
 
-    // For a successful request a response with status 201 alondwith a json object "response"
     res.status(201).json(response);
     } else {
-        // If the request is not successful, this else element will be trigerred
         res.status(500).send('Error in saving note');
     }
 });
@@ -75,10 +74,8 @@ app.post('/api/notes', (req, res) => {
 
 //   Delete note
 app.delete(`/api/notes/:id`, (req, res) => {
-  // Log that a POST request was received
   console.info(`${req.method} request received to delete a note ${req.body}`);
     
-  // Destructuring the body object to obtain note ID
   const { id } = req.body;
   // Find array index of the note to be deleted
   const arrIndex = notes.findIndex(p => p.id == id);
@@ -93,6 +90,8 @@ app.delete(`/api/notes/:id`, (req, res) => {
   res.status(201).json(`Note deleted successfully`);
   });
 
+
+  // Listen to port
 app.listen(PORT, () =>
 console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
