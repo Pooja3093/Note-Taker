@@ -1,4 +1,4 @@
-# miniature-spork
+## miniature-spork
 
 # Note Taker Application
 
@@ -44,10 +44,11 @@ This will start the application. Watch the walk through video for reference on h
 ## Links
 
 [Github repository](https://github.com/Pooja3093/miniature-spork.git)
+
 [Walk through video]()
 
 
 ## Screenshot
-![screenshot_index](.\Develop\public\assets\images\index.png)
+![screenshot_index](\Develop\public\assets\images\index.png)
 
-![screenshot_notes](.\Develop\public\assets\images\notes.png)
+![screenshot_notes](\Develop\public\assets\images\notes.png)
