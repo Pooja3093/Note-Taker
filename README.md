@@ -49,6 +49,6 @@ This will start the application. Watch the walk through video for reference on h
 
 
 ## Screenshot
-![screenshot](https://drive.google.com/file/d/1xInhNAPoP0mttNKPrNjziUOkNzfCPeZi/view?usp=sharing)
+![screenshot_index](https://drive.google.com/file/d/1xInhNAPoP0mttNKPrNjziUOkNzfCPeZi/view?usp=sharing)
 
-![screenshot](https://drive.google.com/file/d/1O0eQJOElAyzz7h-6ByzA-jSmRe9ZSOTA/view?usp=sharing)
+![screenshot_note](https://drive.google.com/file/d/1O0eQJOElAyzz7h-6ByzA-jSmRe9ZSOTA/view?usp=sharing)
