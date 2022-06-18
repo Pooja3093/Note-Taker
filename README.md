@@ -24,7 +24,6 @@ When the user clicks a delete button, a POST request is made alongwith the ID of
   - [Installation](#installation)
   - [Usage](#usage)
   - [Links](#links)
-  - [Screenshot](#screenshot)
 
 
 ## Installation
@@ -47,9 +46,6 @@ This will start the application. Watch the walk through video for reference on h
 
 [Walk through video](https://drive.google.com/file/d/1Vka5x7aJ4ExMihuuUZGMdnzUsRosacFO/view)
 
+[Screenshot_index.html](https://drive.google.com/file/d/1xInhNAPoP0mttNKPrNjziUOkNzfCPeZi/view?usp=sharing)
 
-## Screenshot
-
-![screenshot_index](https://drive.google.com/file/d/1xInhNAPoP0mttNKPrNjziUOkNzfCPeZi/view?usp=sharing)
-
-![screenshot_note](https://drive.google.com/file/d/1O0eQJOElAyzz7h-6ByzA-jSmRe9ZSOTA/view?usp=sharing)
+[Screenshot_notes.html](https://drive.google.com/file/d/1O0eQJOElAyzz7h-6ByzA-jSmRe9ZSOTA/view?usp=sharing)
