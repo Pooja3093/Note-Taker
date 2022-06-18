@@ -45,10 +45,10 @@ This will start the application. Watch the walk through video for reference on h
 
 [Github repository](https://github.com/Pooja3093/miniature-spork.git)
 
-[Walk through video]()
+[Walk through video](https://drive.google.com/file/d/1Vka5x7aJ4ExMihuuUZGMdnzUsRosacFO/view)
 
 
 ## Screenshot
-![screenshot](.\Develop\public\assets\images\index.png)
+![screenshot](https://drive.google.com/file/d/1xInhNAPoP0mttNKPrNjziUOkNzfCPeZi/view?usp=sharing)
 
-![screenshot](.\Develop\public\assets\images\notes.png)
+![screenshot](https://drive.google.com/file/d/1O0eQJOElAyzz7h-6ByzA-jSmRe9ZSOTA/view?usp=sharing)
