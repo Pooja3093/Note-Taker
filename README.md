@@ -1,8 +1,4 @@
-## miniature-spork
-
 # Note Taker Application
-
-## Module 11 challenge
 
 ## Description
 
